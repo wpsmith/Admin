@@ -1,0 +1,207 @@
+/* # wps Framework Admin
+Loaded on all admin pages */
+
+/* # A dividing horizontal rule
+----------- */
+
+hr.div {
+    height: 1px;
+    margin: 10px 0;
+    border: none;
+    background: #ccc;
+}
+
+
+/* # wps menu icon
+----------- */
+
+#adminmenu .toplevel_page_wps .wp-menu-image img {
+    width: 16px;
+    height: 16px;
+}
+
+#adminmenu .toplevel_page_wps .wp-menu-image img {
+    display: none;
+}
+
+/*#adminmenu .toplevel_page_wps .wp-menu-image:before {*/
+    /*font-family: "wps-icon" !important;*/
+    /*content: "\e600";*/
+/*}*/
+
+
+/* # Scribe nag
+----------- */
+
+.scribe-nag {
+    overflow: hidden;
+}
+
+
+/* # wps upgraded
+----------- */
+
+.whats-new {
+    width: 160px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.changelog ul {
+    list-style: disc;
+    padding: 0 0 0 40px;
+}
+
+
+/* # Fix notice placement on our admin pages
+----------- */
+
+.wps-form div.error,
+.wps-form div.updated,
+.wps-metaboxes div.error,
+.wps-metaboxes div.updated {
+    clear: both;
+}
+
+
+/* # wps meta box styles
+----------- */
+
+.wps-metaboxes {
+    box-sizing: border-box;
+
+    padding-bottom: 20px;
+}
+
+.wps-metaboxes .bottom-buttons .button-primary {
+    margin-right: 10px;
+}
+
+.wps-metaboxes .metabox-holder {
+    clear: both;
+}
+
+.wps-metaboxes .inside {
+    padding: 0 10px;
+}
+
+.postbox-container {
+    width: 100%;
+}
+
+.postbox .inside > p:last-child {
+    margin: 1em 0 !important;
+}
+
+.wps-metaboxes fieldset {
+    margin-top: 0;
+}
+
+.wps-metaboxes legend {
+    line-height: 140%;
+}
+
+
+/* # Layout options styles
+----------- */
+
+.wps-layout-selector input {
+    text-align: center;
+}
+
+.wps-layout-selector .default-layout {
+    display: inline-block;
+}
+
+.wps-layout-selector label.box {
+    border: 3px solid transparent;
+    display: block;
+    float: left;
+    margin: 10px 10px 10px 0;
+    text-align: center;
+    max-width: 85px;
+    max-height: 76px;
+}
+
+.wps-layout-selector label.box img {
+    max-width: 85px;
+    pointer-events: none;
+}
+
+.wps-layout-selector label.box:hover {
+    border: 3px solid #ddd;
+}
+
+.wps-layout-selector label.box.selected {
+    border: 3px solid #ccc;
+}
+
+
+/* ## In-post layout box */
+
+#wps_inpost_layout_box .inside input#default-layout {
+    margin-left: 5px;
+}
+
+#wps_inpost_layout_box .wps-layout-selector {
+    padding-top: 5px;
+}
+
+
+/* ## Layout selector, no JS */
+
+.ie8 .wps-layout-selector input,
+.no-js .wps-layout-selector input {
+    display: inline;
+}
+
+.ie8 .wps-layout-selector label.box img,
+.ie8 .wps-layout-selector label.box img:hover,
+.ie8 .wps-layout-selector label.box.selected img,
+.no-js .wps-layout-selector label.box img,
+.no-js .wps-layout-selector label.box img:hover,
+.no-js .wps-layout-selector label.box.selected img {
+    border: 3px solid transparent;
+}
+
+
+/* # Widgets
+----------- */
+
+.wps-widget-column {
+    float: left;
+    width: 49%;
+}
+
+.wps-widget-column-right {
+    margin-left: 2%;
+}
+
+.wps-widget-column-box {
+    margin-top: 10px;
+    padding: 10px 10px 0;
+    border: 1px solid #ddd;
+    background: #f1f1f1;
+}
+
+.wps-widget-column-box-top {
+    margin-top: 0;
+}
+
+.wps-pagechecklist {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.wps-image-size-selector {
+    max-width: 205px;
+}
+
+.no-js .hide-if-no-js {
+    display: none;
+}
+
+.widget-control-actions {
+    clear: both;
+}
