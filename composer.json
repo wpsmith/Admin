@@ -1,0 +1,32 @@
+{
+  "name"       : "wpsmith/admin",
+  "description": "PHP Singleton Class for doing singleton's right.",
+  "keywords"   : [
+    "wordpress",
+    "plugin",
+    "admin",
+    "sanitize"
+  ],
+  "homepage"   : "https://github.com/wpsmith/Admin",
+  "license"    : "GPL-2.0+",
+  "authors"    : [
+    {
+      "name"    : "Travis Smith",
+      "email"   : "t@wpsmith.net",
+      "homepage": "http://wpsmith.net/",
+      "role"    : "Developer"
+    }
+  ],
+  "support"    : {
+    "issues": "https://github.com/wpsmith/Admin/issues"
+  },
+  "require"    : {
+    "php": ">=5.2.4",
+    "wpsmith/singleton": "^0.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "WPS\\Admin\\": "src/"
+    }
+  }
+}
