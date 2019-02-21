@@ -11,7 +11,7 @@
  *
  * PHP Version 7.2
  *
- * @package   WPS\Admin
+ * @package   WPS\WP\Admin
  * @author    Travis Smith <t@wpsmith.net>
  * @copyright 2018 Travis Smith
  * @license   http://opensource.org/licenses/gpl-2.0.php GNU Public License v2
@@ -19,14 +19,14 @@
  * @since     0.2.0
  */
 
-namespace WPS\Admin;
+namespace WPS\WP\Admin;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'WPS\Plugins\Fundraising\Admin\CPTArchiveAdmin' ) ) {
+if ( ! class_exists( __NAMESPACE__ . '\CPTArchiveAdmin' ) ) {
 	/**
 	 * Class CPTArchiveAdmin.
 	 *

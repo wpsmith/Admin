@@ -9,7 +9,7 @@
  *
  * PHP Version 7.2
  *
- * @package   WPS\Plugins\Fundraising
+ * @package   WPS\WP\Admin
  * @author    Travis Smith <t@wpsmith.net>
  * @copyright 2018 Travis Smith
  * @license   http://opensource.org/licenses/gpl-2.0.php GNU Public License v2

@@ -13,7 +13,7 @@
  *
  * PHP Version 7.2
  *
- * @package   WPS\Admin
+ * @package   WPS\WP\Admin
  * @author    Travis Smith <t@wpsmith.net>
  * @copyright 2018 Travis Smith
  * @license   http://opensource.org/licenses/gpl-2.0.php GNU Public License v2
@@ -21,14 +21,14 @@
  * @since     0.2.0
  */
 
-namespace WPS\Admin;
+namespace WPS\WP\Admin;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'WPS\Admin\Admin' ) ) {
+if ( ! class_exists( __NAMESPACE__ . '\Admin' ) ) {
 	/**
 	 * Class Admin.
 	 *
@@ -157,7 +157,7 @@ if ( ! class_exists( 'WPS\Admin\Admin' ) ) {
 			// Create the menu(s). Conditional logic happens within the separate methods.
 			add_action( 'admin_menu', array( $this, 'maybe_add_main_menu' ), 5 );
 			add_action( 'admin_menu', array( $this, 'maybe_add_first_submenu' ), 5 );
-			add_action( 'admin_menu', array( $this, 'maybe_add_submenu' ) );
+			add_action( 'admin_menu', array( $this, 'maybe_add_submenu' ), PHP_INT_MAX );
 
 			// Set up settings and notices.
 			add_action( 'admin_init', array( $this, 'register_settings' ) );
@@ -548,8 +548,8 @@ if ( ! class_exists( 'WPS\Admin\Admin' ) ) {
 			$screen_reader = '<span class="screen-reader-text">. ' . esc_html__( 'Link opens in a new window.', 'wps' ) . '</span>';
 			get_current_screen()->set_help_sidebar(
 				'<p><strong>' . esc_html__( 'For more information:', 'wps' ) . '</strong></p>' .
-				'<p><a href="http://wpsmith.net/contact/" target="_blank">' . esc_html__( 'Get Support', 'wps' ) . $screen_reader . '</a></p>' .
-				'<p><a href="http://wpsmith.net/contact/" target="_blank">' . esc_html__( 'Blog', 'wps' ) . $screen_reader . '</a></p>'
+				'<p><a href="https://wpsmith.net/contact/" target="_blank">' . esc_html__( 'Get Support', 'wps' ) . $screen_reader . '</a></p>' .
+				'<p><a href="https://wpsmith.net/contact/" target="_blank">' . esc_html__( 'Blog', 'wps' ) . $screen_reader . '</a></p>'
 			);
 
 		}
